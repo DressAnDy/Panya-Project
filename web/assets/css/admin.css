@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar{
+    width: 268px;
+    height: 1080px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sidebar p {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.sidebar h2{
+    font-weight: 550;
+}
+
+.hello {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout{
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 59px;
+}
+
+.logout:hover{
+    background-color: #FEAE6F;
+}
+
+.sidebar-button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 22px 0;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 25px;
+}
+
+.sidebar-button:hover{
+    background-color: #FEAE6F;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: content-box;
+    background-color: #f8f9fa;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+
+thead th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #FFF4EB;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.status-done {
+    color: #66C62C;
+}
+
+.status-not-yet {
+    color: #C62C2C;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.icon-button:hover .icon {
+    opacity: 0.5    ;
+}
+
+.order-form input[type="image"] {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.actionIcon {
+    display: flex;
+    aligh-items: center;
+    justify-content: space-around;
+}
+
+.addProduct {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addProduct input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    margin-right: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.addProduct input[type="submit"]:hover{
+    background-color: #FEAE6F;
+}
