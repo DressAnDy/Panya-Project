@@ -38,7 +38,6 @@ public class ProductController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 String action = request.getParameter("action");
         
-        // Initialize DAO and other variables
         productsDAO dao = new productsDAO();
         String keyword = request.getParameter("keyword");
         String sortCol = request.getParameter("sortCol");
@@ -64,7 +63,18 @@ String action = request.getParameter("action");
                 request.setAttribute("product", product);
                 request.getRequestDispatcher("admin.jsp").forward(request, response);
             }else if(action.equals("delete")){
+                Integer id = null;
+                try{
+                    id = Integer.parseInt(request.getParameter("id"));
+                }catch(NumberFormatException nx){
                 
+                }
+                if(id != null){
+                    dao.delete(id);
+                }
+                List<productsDTO> productList = dao.list(keyword, sortCol);
+                request.setAttribute("productlist", productList);
+                request.getRequestDispatcher("admin.jsp").forward(request, response);
             }
         } catch (Exception e) {
             log("Error processing request: " + e.getMessage());

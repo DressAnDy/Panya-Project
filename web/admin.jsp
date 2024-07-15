@@ -65,6 +65,7 @@
                         <%
 
                     List<productsDTO> list = (List<productsDTO>) request.getAttribute("productlist");
+                    if(list != null){
                     for (productsDTO p : list) {
                           pageContext.setAttribute("p", p);
                         %>
@@ -81,8 +82,9 @@
                             <td>
                                 <form action="ProductController" method="POST">
                                     <input name="action" value="edit" type="hidden">
-                                    <input name="id" value="${product.id}" type="hidden">
-                                    <input type="submit" value="Delete">
+                                    <input name="action" value="delete" type="hidden">
+                                    <input name="id" value="${p.id}" type="hidden">
+                                    <input type="submit" value="Delete" name="action">
                                     <input type="image" src="assets/img/pen.png" alt="submit">
                                 </form>
                             </td>
@@ -90,6 +92,7 @@
 
                         <%
                                 }
+                            }   
                         %>
                     </tbody>
                 </table>
