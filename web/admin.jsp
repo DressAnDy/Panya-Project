@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin</title>
-        <link rel="stylesheet" href="assets/css/admin.css">
+        <link rel=  "stylesheet" href="assets/css/admin.css">
         <link rel="stylesheet" href="assets/css/variables.css">
         <style>
             .hidden {
@@ -39,7 +39,7 @@
             </div>
 
             <div class="main">
-                <table id="products" class="hidden">
+                <table id="products">
                     <thead>
                         
                         <tr>
@@ -77,7 +77,9 @@
                             <td>${p.name} </td>
                             <td>${p.category_name}</td>
                             <td>${p.description}</td>
-                            <td>${p.image}</td>
+                            <td>
+                                <img src="assets/product-images/${p.image}" alt="Product Image">
+                            </td>
                             <td>${p.is_in_stock}</td> 
                             <td>${p.price}</td>     
                             <td>
@@ -87,7 +89,7 @@
                                     <input type="image" src="assets/images/pen.png" alt="delete">
                                 </form>
 
-                                <form class="icon-button" action="ProductController?action=delete" method="POST">
+                                <form class="icon-button" action="ProductController" method="POST">
                                     <input name="action" value="delete" type="hidden">
                                     <input name="id" value="${p.id}" type="hidden">
                                     <input type="image" src="assets/images/delete.png" alt="delete">
