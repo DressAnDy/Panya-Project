@@ -42,8 +42,6 @@
                 <table id="products" class="hidden">
                     <thead>
                         
-                            
-
                         <tr>
                             <td>
                                 <form action="ProductController" method="POST" class="addProduct">
@@ -51,6 +49,9 @@
                                     <input type="submit" value="Create">
                                 </form>
                             </td>
+                        </tr>
+                        
+                        <tr>
                             <th>ID</th>
                             <th>Name</th>
                             <th>Category</th>
