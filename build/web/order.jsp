@@ -14,18 +14,28 @@
 
 <body>
     <div id="wrapper">
-        <header>
+        <header class="order-header">
             <nav>
                 <div class="menu">
                     <div class="header-logo">
-                        <a href="main.jsp"><img src="assets\img\Logo_Basic1.png" alt="logo"></a>
+                        <a href="main.jsp"><img src="assets\images\Logo_Basic1.png" alt="logo"></a>
                     </div>
 
                     <ul>
                         <li><a href="menu.jsp">Menu</a></li>
                         <li><a href="about.jsp">About Us</a></li>
                         <li><a href="order.jsp">Order</a></li>
-                        <li><a href="login.jsp" class="header_loginbutton">Login</a></li>
+                        
+                        <c:if test="${sessionScope.acc == null}">
+                           <li><a href="login.jsp" class="header_loginbutton">Login</a></li>    
+                        </c:if>
+                          
+                           <c:if test="${sessionScope.acc != null}">
+                               <li><a href="">Hello ${sessionScope.acc.username}</a></li>
+                               <li><a href="login?action=logout" class="header_loginbutton">Logout</a></li>   
+                           </c:if>
+                               
+                        <li><a href="" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
                     </ul>
                 </div>
 
@@ -46,15 +56,15 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-section logo">
-                    <img src="assets\img\Logo_Basic1.png" alt="">
+                    <img src="assets\images\Logo_Basic1.png" alt="">
                 </div>
                 <div class="footer-section links">
                     <h2>Resources</h2>
                     <ul>
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="order.html">Order</a></li>
+                        <li><a href="main.jsp">Home</a></li>
+                        <li><a href="about.jsp">About us</a></li>
+                        <li><a href="menu.jsp">Menu</a></li>
+                        <li><a href="order.jsp">Order</a></li>
                     </ul>
                 </div>
                 <div class="footer-section contact">

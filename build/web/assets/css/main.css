@@ -17,7 +17,7 @@ ul{
     list-style: none;
 }
 
-header{
+.main-header{
     position: relative;
     background-image: url(./main-banner.jpg);
     height: 100vh;
@@ -25,7 +25,7 @@ header{
     background-position: center;
 }
 
-header::before{
+.main-header::before{
     position: absolute;
     content: "";
     height: 100%;
@@ -51,9 +51,7 @@ nav{
     height: 100px;
 }
 
-.sticky .menu ul li a:not(.header_loginbutton):hover{
-    color: var(--background-color);
-}
+
 
 nav .header-logo{
     width: 150px;
@@ -93,6 +91,10 @@ nav .menu{
     margin-left: 25px;
 }
 
+.menu ul li .cart-icon{
+    font-size: 1.5rem;
+}
+
 .menu ul li a{
     color: var(--primary-color);
     font-size: 1rem;
@@ -101,18 +103,11 @@ nav .menu{
     transition: all 0.2s ease-in-out;
 }
 
-.header_loginbutton{
-    transition: all 0.2s ease-in-out;
-}
-
-.header_loginbutton:hover{
+.menu ul li a:hover{
+    text-decoration: underline;
     padding: 10px 40px;
     background-color: var(--background-color);
     color: #F6DCAC;
-}
-
-.menu ul li a:hover{
-    text-decoration: underline;
 }
 
 .header-text-center{
@@ -153,7 +148,6 @@ nav .menu{
     grid-gap: 50px;
     overflow: hidden;
     margin: 50px 100px;
-
 }
 
 .bestseller-card{

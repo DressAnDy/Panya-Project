@@ -32,6 +32,10 @@
                     <input type="password" name="password" placeholder="Password" required>
                     <i class='bx bxs-lock'></i>
                 </div>
+                
+                 <c:if test="${not empty errorMessage}">
+                    <p class="error-text">${errorMessage}</p>
+                </c:if>
 
                 <button type="submit" class="login-submit-button">Sign In</button>
 
@@ -39,11 +43,7 @@
                     <p>Don't have an account? <a href="signUp.jsp">Sign up</a></p>
                 </div>
                 
-               <c:if test="${not empty errorMessage}">
-                    <div class="error-message">${errorMessage}</div>
-                </c:if>
-            
-            </form>
+             </form>
         </div>
     </div>   
 </body>

@@ -26,7 +26,7 @@ body::before{
 
 .login-form-wrapper{
     width: 50%;
-    height: 50%;
+    height: 55%;
     background-color: var(--primary-color);
     border-radius: 10px;
 }
@@ -104,4 +104,11 @@ body::before{
 
 .login-form-signup-link a:hover{
     text-decoration: underline;
+}
+
+.error-text{
+    color: #E4003A;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }

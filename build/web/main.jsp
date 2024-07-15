@@ -16,11 +16,11 @@
 
 <body>
     <div id="wrapper">
-        <header>
+        <header class="main-header">
             <nav>
                 <div class="menu">
                     <div class="header-logo">
-                        <a href="main.jsp"><img src="assets\img\Logo_Basic1.png" alt="logo"></a>
+                        <a href="main.jsp"><img src="assets\images\Logo_Basic1.png" alt="logo"></a>
                     </div>
 
                     <ul>
@@ -36,6 +36,8 @@
                                <li><a href="">Hello ${sessionScope.acc.username}</a></li>
                                <li><a href="login?action=logout" class="header_loginbutton">Logout</a></li>   
                            </c:if>
+                               
+                        <li><a href="" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
  
                         
                     </ul>
@@ -57,42 +59,42 @@
 
                 <div class="bestseller-card-wrapper">
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content white-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content white-text">100.000</p>
@@ -105,21 +107,21 @@
 
                 <div class="comingsoon-card-wrapper">
                     <div class="comingsoon-card big">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content blue-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content blue-text">100.000</p>
                     </div>
 
                     <div class="comingsoon-card small1">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content blue-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content blue-text">100.000</p>
                     </div>
 
                     <div class="comingsoon-card small2">
-                        <img src="assets\img\banh-tiramisu.jpg" alt="picture">
+                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
                         <h3 class="bestseller-card-content blue-text">Product</h3>
                         <p class="bestseller-card-content yellow-text">Description of product</p>
                         <p class="bestseller-card-content blue-text">100.000</p>
@@ -131,15 +133,15 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-section logo">
-                    <img src="assets\img\Logo_Basic1.png" alt="">
+                    <img src="assets\images\Logo_Basic1.png" alt="">
                 </div>
                 <div class="footer-section links">
                     <h2>Resources</h2>
                     <ul>
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="order.html">Order</a></li>
+                        <li><a href="main.jsp">Home</a></li>
+                        <li><a href="about.jsp">About us</a></li>
+                        <li><a href="menu.jsp">Menu</a></li>
+                        <li><a href="order.jsp">Order</a></li>
                     </ul>
                 </div>
                 <div class="footer-section contact">

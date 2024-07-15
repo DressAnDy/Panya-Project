@@ -18,18 +18,28 @@
 
 <body>
     <div id="wrapper">
-        <header>
+        <header class="about-header">
             <nav>
                 <div class="menu">
                     <div class="header-logo">
-                        <a href="main.jsp"><img src="assets\img\Logo_Basic1.png" alt="logo"></a>
+                        <a href="main.jsp"><img src="assets\images\Logo_Basic1.png" alt="logo"></a>
                     </div>
 
                     <ul>
                         <li><a href="menu.jsp">Menu</a></li>
                         <li><a href="about.jsp">About Us</a></li>
                         <li><a href="order.jsp">Order</a></li>
-                        <li><a href="login.jsp" class="header_loginbutton">Login</a></li>
+                        
+                        <c:if test="${sessionScope.acc == null}">
+                           <li><a href="login.jsp" class="header_loginbutton">Login</a></li>    
+                        </c:if>
+                          
+                           <c:if test="${sessionScope.acc != null}">
+                               <li><a href="">Hello ${sessionScope.acc.username}</a></li>
+                               <li><a href="login?action=logout" class="header_loginbutton">Logout</a></li>   
+                           </c:if>
+                               
+                        <li><a href="" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
                     </ul>
                 </div>
 
@@ -46,7 +56,7 @@
         <main id="main">
             <section class="row">
                 <div class="story">
-                    <img src="assets/img/About.png" alt="Bakery">
+                    <img src="assets/images/About.png" alt="Bakery">
                     <div class="essay">
                         <h1>OUR STORY</h1>
                         <p class="intro">Welcome to Panya Bakery, where we bake happiness!</p>
@@ -65,28 +75,28 @@
             <section class="slogans">
                 <section class="box">
                     <section class="icons">
-                        <img src="assets/img/bread.png" alt="Quality">
+                        <img src="assets/images/bread.png" alt="Quality">
                         <h3>Quality</h3>
                         <p>Fine Requirements,</p>
                         <p>Delicious Results.</p>
                     </section>
         
                     <section class="icons">
-                        <img src="assets/img/happy.png" alt="Community">
+                        <img src="assets/images/happy.png" alt="Community">
                         <h3>Community</h3>
                         <p>Where connections</p>
                         <p>Bake up.</p>
                     </section>
         
                     <section class="icons">
-                        <img src="assets/img/cupcake.png" alt="Fresh Daily">
+                        <img src="assets/images/cupcake.png" alt="Fresh Daily">
                         <h3>Fresh Daily</h3>
                         <p>Because flavor</p>
                         <p>matters.</p>
                     </section>
         
                     <section class="icons">
-                        <img src="assets/img/heart.png" alt="Baked with Passion">
+                        <img src="assets/images/heart.png" alt="Baked with Passion">
                         <h3>Baked with Passion</h3>
                         <p>In every bite.</p>
                     </section>
@@ -103,15 +113,15 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-section logo">
-                    <img src="assets\img\Logo_Basic1.png" alt="">
+                    <img src="assets\images\Logo_Basic1.png" alt="">
                 </div>
                 <div class="footer-section links">
                     <h2>Resources</h2>
                     <ul>
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="order.html">Order</a></li>
+                        <li><a href="main.jsp">Home</a></li>
+                        <li><a href="about.jsp">About us</a></li>
+                        <li><a href="menu.jsp">Menu</a></li>
+                        <li><a href="order.jsp">Order</a></li>
                     </ul>
                 </div>
                 <div class="footer-section contact">
