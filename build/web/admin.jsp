@@ -41,16 +41,16 @@
             <div class="main">
                 <table id="products" class="hidden">
                     <thead>
+                        
+                            
+
                         <tr>
-                            <td colspan="8">
+                            <td>
                                 <form action="ProductController" method="POST" class="addProduct">
                                     <input name="action" value="create" type="hidden">
                                     <input type="submit" value="Create">
                                 </form>
                             </td>
-                        </tr>
-
-                        <tr>
                             <th>ID</th>
                             <th>Name</th>
                             <th>Category</th>
@@ -64,10 +64,10 @@
                     <tbody>
                         <%
 
-                    List<productsDTO> list = (List<productsDTO>) request.getAttribute("productlist");
-                    if(list != null){
-                    for (productsDTO p : list) {
-                          pageContext.setAttribute("p", p);
+                            List<productsDTO> list = (List<productsDTO>) request.getAttribute("productlist");
+                            if (list != null) {
+                                for (productsDTO p : list) {
+                                    pageContext.setAttribute("p", p);
                         %>
 
 
@@ -78,21 +78,26 @@
                             <td>${p.description}</td>
                             <td>${p.image}</td>
                             <td>${p.is_in_stock}</td> 
-                            <td>${p.price}</td>        
+                            <td>${p.price}</td>     
                             <td>
-                                <form action="ProductController" method="POST">
+                                <form class="icon-button" action="ProductController?action=edit" method="POST">
                                     <input name="action" value="edit" type="hidden">
+                                    <input name="id" value="${p.id}" type="hidden">
+                                    <input type="image" src="assets/images/pen.png" alt="delete">
+                                </form>
+
+                                <form class="icon-button" action="ProductController?action=delete" method="POST">
                                     <input name="action" value="delete" type="hidden">
                                     <input name="id" value="${p.id}" type="hidden">
-                                    <input type="submit" value="Delete" name="action">
-                                    <input type="image" src="assets/img/pen.png" alt="submit">
+                                    <input type="image" src="assets/images/delete.png" alt="delete">
                                 </form>
                             </td>
+
                         </tr>
 
                         <%
                                 }
-                            }   
+                            }
                         %>
                     </tbody>
                 </table>
@@ -124,8 +129,7 @@
                                         <input name="id" value="${order.id}" type="hidden">
                                         <input type="image" src="assets/img/pen.png" alt="submit">
                                     </form>
-                                </td>
-                                <td>
+                                        
                                     <form action="OrderController" method="POST" class="order-form">
                                         <input name="action" value="delete" type="hidden">
                                         <input name="id" value="${order.id}" type="hidden">

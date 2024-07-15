@@ -63,6 +63,7 @@ String action = request.getParameter("action");
                 request.setAttribute("product", product);
                 request.getRequestDispatcher("admin.jsp").forward(request, response);
             }else if(action.equals("delete")){
+                
                 Integer id = null;
                 try{
                     id = Integer.parseInt(request.getParameter("id"));

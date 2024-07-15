@@ -162,13 +162,13 @@ public List<productsDTO> list(String keyword, String sortCol) {
         String sql = " DELETE PRODUCTS ";
         sql += " WHERE id = ? ";
         try {
-            Connection cn = DBUtils.getConnection();
-            PreparedStatement ps = cn.prepareStatement(sql);
+            con = DBUtils.getConnection();
+            ps = con.prepareStatement(sql);
             
             ps.setInt(1, id);
             
             ps.executeQuery();
-            cn.close();
+            con.close();
             return true;
         } catch (SQLException e) {
             System.err.println("Delete product error:" + e.getMessage());
