@@ -59,45 +59,45 @@
 
                 <div class="bestseller-card-wrapper">
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\RedVelvetCake.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Red Velvet Cake</h3>
+                        <p class="bestseller-card-content yellow-text">Soft red velvet cake with cream cheese frosting</p>
+                        <p class="bestseller-card-content white-text">80.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\MatchaCake.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Matcha Cake</h3>
+                        <p class="bestseller-card-content yellow-text">Japanese green tea-flavored cake</p>
+                        <p class="bestseller-card-content white-text">80.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\Tiramisu.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Tiramisu</h3>
+                        <p class="bestseller-card-content yellow-text">Italian dessert with layers of coffee-soaked sponge and mascarpone</p>
+                        <p class="bestseller-card-content white-text">80.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\BananaBread.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Banana Bread</h3>
+                        <p class="bestseller-card-content yellow-text">Moist, sweet bread made with bananas</p>
+                        <p class="bestseller-card-content white-text">50.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\RyeBread.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Rye Bread</h3>
+                        <p class="bestseller-card-content yellow-text">Dense bread made with rye flour</p>
+                        <p class="bestseller-card-content white-text">50.000</p>
                     </div>
 
                     <div class="bestseller-card">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content white-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content white-text">100.000</p>
+                        <img src="assets\product-images\MatchaLatte.jpg" alt="picture">
+                        <h3 class="bestseller-card-content white-text">Matcha Latte</h3>
+                        <p class="bestseller-card-content yellow-text">Japanese matcha green tea with steamed milk</p>
+                        <p class="bestseller-card-content white-text">60.000</p>
                     </div>
                 </div>
             </section>
@@ -107,24 +107,24 @@
 
                 <div class="comingsoon-card-wrapper">
                     <div class="comingsoon-card big">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content blue-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content blue-text">100.000</p>
+                        <img src="assets\images\Greentea.jpg" alt="picture">
+                        <h3 class="bestseller-card-content blue-text">Thailand Green Milk Tea</h3>
+                        <p class="bestseller-card-content yellow-text">Perfect tea from Thailand</p>
+                        <p class="bestseller-card-content blue-text">70.000</p>
                     </div>
 
                     <div class="comingsoon-card small1">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content blue-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content blue-text">100.000</p>
+                        <img src="assets\images\Cupcake.jpg" alt="picture">
+                        <h3 class="bestseller-card-content blue-text">Cupcake</h3>
+                        <p class="bestseller-card-content yellow-text">Delicious cupcake for birthday</p>
+                        <p class="bestseller-card-content blue-text">60.000</p>
                     </div>
 
                     <div class="comingsoon-card small2">
-                        <img src="assets\images\banh-tiramisu.jpg" alt="picture">
-                        <h3 class="bestseller-card-content blue-text">Product</h3>
-                        <p class="bestseller-card-content yellow-text">Description of product</p>
-                        <p class="bestseller-card-content blue-text">100.000</p>
+                        <img src="assets\images\Kebab.jpg" alt="picture">
+                        <h3 class="bestseller-card-content blue-text">Doner Kebab</h3>
+                        <p class="bestseller-card-content yellow-text">Doner kebab from Turkey</p>
+                        <p class="bestseller-card-content blue-text">50.000</p>
                     </div>
                 </div>
             </section>

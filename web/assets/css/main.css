@@ -157,13 +157,14 @@ nav .menu{
 
 .bestseller-card img{
     width: 100%;
-    border-radius: 20px;
+    height: 250px;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
 }
 
 .bestseller-card img:hover{
     transform: scale(1.1);
-    border-radius: 80px;
     opacity: 0.9;
 }
 
