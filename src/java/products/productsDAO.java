@@ -45,7 +45,7 @@ public class productsDAO {
         return list;
     }
 
-    public productsDTO getProductById(int id) {
+    public productsDTO getProductById(int id) { //dùng để tìm product
         productsDTO product = null;
         String sql = "SELECT * FROM PRODUCTS WHERE id = ?";
         try {
@@ -113,26 +113,26 @@ public List<productsDTO> list(String keyword, String sortCol) {
     return list;
 }
 
-    public void insertCakes(String id , String name , String description
-                            ,String image , double price , String category_name , int is_in_stock){
+    public Long insertCakes(productsDTO product){
     
         String sql = "INSERT INTO CAKES(id , name , description , price , image , category_id, is_in_stock)\n" +
                         "VALUES(?, ?, ?, ?, ?, ?, ?)";
            try{
                con = new DBUtils().getConnection();
                ps = con.prepareStatement(sql);
-               ps.setString(1, id);
-               ps.setString(2, name);
-               ps.setString(3, description);
-               ps.setDouble(4, price);
-               ps.setString(5, image);
-               ps.setString(6, category_name);
-               ps.setInt(6, is_in_stock);  
+               ps.setInt(1, product.getId());
+               ps.setString(2, product.getName());
+               ps.setString(3, product.getDescription());
+               ps.setDouble(4, product.getPrice());
+               ps.setString(5, product.getImage());
+               ps.setString(6, product.getCategory_name());
+               ps.setBoolean(6, product.getIs_in_stock());  
                ps.executeUpdate();
            } catch (SQLException ex) {
                System.out.println("Insert error!" + ex.getMessage());
                ex.printStackTrace();
         }
+        return null;
     }
     
         public boolean update(productsDTO product) {

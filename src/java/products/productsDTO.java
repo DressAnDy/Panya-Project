@@ -71,7 +71,7 @@ public class productsDTO {
         this.category_name = category_name;
     }
 
-    public boolean isIs_in_stock() {
+    public boolean getIs_in_stock() {
         return is_in_stock;
     }
 
@@ -86,4 +86,6 @@ public class productsDTO {
     public void setCreated_at(String created_at) {
         this.created_at = created_at;
     }
+    
+    
 }

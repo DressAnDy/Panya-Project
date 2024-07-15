@@ -76,6 +76,8 @@ String action = request.getParameter("action");
                 List<productsDTO> productList = dao.list(keyword, sortCol);
                 request.setAttribute("productlist", productList);
                 request.getRequestDispatcher("admin.jsp").forward(request, response);
+            }else if(action.equals("insert")){
+                
             }
         } catch (Exception e) {
             log("Error processing request: " + e.getMessage());
