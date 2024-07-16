@@ -25,7 +25,7 @@
                     <ul>
                         <li><a href="menu.jsp">Menu</a></li>
                         <li><a href="about.jsp">About Us</a></li>
-                        <li><a href="order.jsp">Order</a></li>
+                       
                         
                         <c:if test="${sessionScope.acc == null}">
                            <li><a href="login.jsp" class="header_loginbutton">Login</a></li>    
@@ -36,7 +36,7 @@
                                <li><a href="login?action=logout" class="header_loginbutton">Logout</a></li>   
                            </c:if>
                                
-                        <li><a href="" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
+                        <li><a href="order.jsp" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
                     </ul>
                 </div>
 
@@ -51,7 +51,77 @@
 
 
         <main id="main">
-            
+            <section class="order-form">
+                <h1>Customer Information</h1>
+                <div class="form-wrapper">
+                    <div class="form-container">
+                        <form action="" class="form-info">
+                            <label>Last Name:</label>
+                            <input type="text" required>
+
+                            <label>First Name:</label>
+                            <input type="text" required></br>
+
+                            <label>Phone Number:</label>
+                            <input type="tel" required></br>
+
+                            <label>Gmail:</label>
+                            <input type="email" required></br>
+
+                            <label>Address:</label>
+                            <input type="text" required>
+
+                            <button type="submit" class="submit-button">Verify</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-table">
+                <h1>Order Information</h1>
+
+                <table class="cart-table-info">
+                    <thead>
+                        <tr class="cart-table-info-header">
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="cart-table-info-display">
+                            <td><img src="assets\product-images\AlmondCake.jpg" alt="img"></td>
+                            <td>80.000</td>
+                            <td class="product-number">
+                                <button class="inline"><i class='bx bx-plus-medical' style='color:#01204e'></i></button>
+                                <div class="inline">2</div>
+                                <button class="inline"><i class='bx bx-minus' style='color:#01204e'></i></button>
+                            </td>
+                            <td>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="cart-table-info-display">
+                            <td><img src="assets\product-images\MilkTea.jpg" alt="img"></td>
+                            <td>60.000</td>
+                            <td class="product-number">
+                                <button class="inline"><i class='bx bx-plus-medical' style='color:#01204e'></i></button>
+                                <div class="inline">1</div>
+                                <button class="inline"><i class='bx bx-minus' style='color:#01204e'></i></button>
+                            </td>
+                            <td>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                </table>
+
+                <h3>Total Price: 220.000</h3>
+                <button type="submit" class="pay-button">Buy</button>
+                </tbody>
+
+            </section>
         </main>
 
         <footer>

@@ -26,7 +26,7 @@
                     <ul>
                         <li><a href="menu.jsp">Menu</a></li>
                         <li><a href="about.jsp">About Us</a></li>
-                        <li><a href="order.jsp">Order</a></li>
+                       
                         
                         <c:if test="${sessionScope.acc == null}">
                            <li><a href="login.jsp" class="header_loginbutton">Login</a></li>    
@@ -37,7 +37,7 @@
                                <li><a href="login?action=logout" class="header_loginbutton">Logout</a></li>   
                            </c:if>
                                
-                        <li><a href="" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
+                        <li><a href="order.jsp" class="cart-icon"><i class='bx bxs-cart'></i></a></li>
  
                         
                     </ul>
