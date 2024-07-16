@@ -166,6 +166,11 @@ tbody td {
     transition: color 0.3s;
 }
 
+.product-img img{
+    width: 100px;
+    height: 100px;
+}
+
 .tableID a:hover{
     color: #FEAE6F;
     text-decoration: underline;

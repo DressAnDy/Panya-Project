@@ -137,7 +137,7 @@
                                 <td>${p.name} </td>
                                 <td>${p.category_name}</td>
                                 <td>${p.description}</td>
-                                <td>
+                                <td class="product-img">
                                     <img src="${p.image}">
                                 </td>
                                 <td>${p.is_in_stock}</td> 
