@@ -76,7 +76,7 @@ String action = request.getParameter("action");
                 List<productsDTO> productList = dao.list(keyword, sortCol);
                 request.setAttribute("productlist", productList);
                 request.getRequestDispatcher("admin.jsp").forward(request, response);
-            }/*else if(action.equals("insert")){
+            }else if(action.equals("insert")){
                 Integer id = null;
                 try{
                     id = Integer.parseInt(request.getParameter("id"));
@@ -93,8 +93,12 @@ String action = request.getParameter("action");
                 }
                 String image = request.getParameter("image");
                 String category_name = request.getParameter("category_name");
-                Boolean is_i
-            }*/
+                
+            }else if(action == null || action.equals("listProduct")) {
+                List<productsDTO> productList = dao.list(keyword, sortCol);
+                request.setAttribute("productlist", productList);
+                request.getRequestDispatcher("menu.jsp").forward(request, response);
+            }
         } catch (Exception e) {
             log("Error processing request: " + e.getMessage());
             e.printStackTrace();

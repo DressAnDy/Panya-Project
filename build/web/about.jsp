@@ -28,7 +28,7 @@
                     </div>
 
                     <ul>
-                         <li><a href="menu.jsp">Menu</a></li>
+                         <li><a href="ProductController?action=listProduct">Menu</a></li>
                         <li><a href="about.jsp">About Us</a></li>
                        
                         

@@ -1,5 +1,6 @@
+
 <%@page import="products.productsDTO"%>
-<%@page import="orders.OrdersDTO"%>
+<%@page import="orders.OrderDTO"%>
 <%@page import="java.util.List"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -180,14 +181,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach items="${orderlist}" var="order">
+                            <c:forEach items="${orderItems}" var="order">
                                 <tr>
-                                    <td>${order.id}</td>
-                                    <td>${order.user_id}</td>
-                                    <td>${order.order_date}</td>
-                                    <td>${order.order_type}</td>
-                                    <td>${order.status}</td>
-                                    <td>${order.total_price}</td>
+                                    <td>${item.id}</td>
+                                    <td>${item.orderId}</td>
+                                    <td>${item.productId}</td>
+                                    <td>${item.quantity}</td>
+                                    <td>${item.price}</td>
                                     <td>
                                         <form action="OrderController" method="POST" class="order-form">
                                             <input name="action" value="edit" type="hidden">
